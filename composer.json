@@ -9,5 +9,7 @@
             "email": "ocramius@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/console": "^3.2"
+    }
 }
