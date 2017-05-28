@@ -11,5 +11,10 @@
     ],
     "require": {
         "symfony/console": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Example\\Cli\\": "src/Example/Cli"
+        }
     }
 }
