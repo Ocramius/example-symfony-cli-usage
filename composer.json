@@ -1,0 +1,13 @@
+{
+    "name": "ocramius/example-symfony-cli-usage",
+    "description": "An example app showing how to set up a symfony CLI with a DIC-based application",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Pivetta",
+            "email": "ocramius@gmail.com"
+        }
+    ],
+    "require": {}
+}
