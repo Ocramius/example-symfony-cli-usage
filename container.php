@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Example\Cli\Greet;
 use Example\Cli\SayHello;
 use Interop\Container\ContainerInterface as InteropContainer;
+use PackageVersions\Versions;
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Application;
 use Zend\ServiceManager\Factory\DelegatorFactoryInterface;
@@ -14,7 +15,10 @@ use Zend\ServiceManager\ServiceManager;
 return new ServiceManager([
     'factories' => [
         Application::class => function (ContainerInterface $container) : Application {
-            $application = new Application();
+            $application = new Application(
+                'Example application - DIC setup - versioned',
+                Versions::getVersion('ocramius/example-symfony-cli-usage')
+            );
 
             $application->addCommands($container->get('cli-commands'));
 
