@@ -12,11 +12,13 @@
     "require": {
         "symfony/console": "^3.2",
         "zendframework/zend-servicemanager": "^3.3",
-        "ocramius/package-versions": "^1.1"
+        "ocramius/package-versions": "^1.1",
+        "ocramius/proxy-manager": "^2.1.1"
     },
     "autoload": {
         "psr-4": {
-            "Example\\Cli\\": "src/Example/Cli"
+            "Example\\Cli\\": "src/Example/Cli",
+            "Example\\Dependency\\": "src/Example/Dependency"
         }
     }
 }
